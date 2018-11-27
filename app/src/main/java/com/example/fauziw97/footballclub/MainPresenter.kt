@@ -10,8 +10,8 @@ import org.jetbrains.anko.uiThread
 
 class MainPresenter(private val view: MainView) {
 
-    val apiRepository = ApiRepository()
-    val gson = Gson()
+    private val apiRepository = ApiRepository()
+    private val gson = Gson()
 
     fun getTeamList(league: String?) {
         view.showLoading()
